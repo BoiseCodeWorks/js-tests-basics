@@ -13,17 +13,7 @@ function isEven(num) {
 //Given 2 numbers, generate a random number within that range. Make it inclusive so that the starting and ending numbers are part of the range. HINT** Utilize Javascript's Math Class (To the Google!)
 
 function numberGenerator(num1, num2) {
-  let small
-  let big
-  if (num1 < num2) {
-    small = num1
-    big = num2
-  } else {
-    small = num2
-    big = num1
-  }
 
-  return Math.floor(Math.random() * (big - small)) + small
 
 }
 
