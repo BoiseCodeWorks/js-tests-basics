@@ -16,4 +16,3 @@ function numberGenerator(num1, num2) {
 
 
 }
-

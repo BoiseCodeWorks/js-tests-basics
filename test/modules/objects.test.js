@@ -52,5 +52,14 @@ describe("objects.js", () => {
       chai.assert.isUndefined(testCat.whiskers, "Be sure to delete the property")
     })
   })
+  describe("returnIndex Function", () => {
+    let testArray = {
+      likes: ['a', 'b', 'c', 'd', 'e', 'f']
+    }
+    it("The function should return the 4 item in the likes array on the cat object", () => {
+      chai.assert.strictEqual(returnIndex(testCat), testCat.likes[3], "Be sure to return the value at the proper index")
+      chai.assert.strictEqual(returnIndex(testArray), testArray.likes[3], "Be sure to return the value at the proper index")
+    })
+  })
 })
 
