@@ -12,7 +12,8 @@ describe("numbers.js", () => {
       chai.assert.isTrue(isEven(4), "Be sure to return true for even numbers")
     })
     it("The number 5 returns false", () => {
-      chai.assert.isTrue(!isEven(5), "Be sure to return false for odd numbers")
+      let _sut = isEven(5)
+      chai.assert.isTrue(!_sut && typeof _sut == 'boolean', "Be sure to return false for odd numbers")
     })
   })
 
