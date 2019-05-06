@@ -56,7 +56,7 @@ describe("numbers.js", () => {
       chai.assert.isTrue((numberGenerator(10, 100) >= 10 && numberGenerator(10, 100) <= 100), "Be sure to include the provided numbers in your range")
     })
     it("Function still works given that num1 isn't necessarily the smallest number", () => {
-      chai.assert.isTrue((numberGenerator(100, 10) >= 10 && numberGenerator(100, 10) <= 100), "Be sure to include the provided numbers in your range")
+      chai.assert.isTrue((numberGenerator(100, 99) >= 99 && numberGenerator(100, 99) <= 100), "Be sure to include the provided numbers in your range")
     })
   })
 })
