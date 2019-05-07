@@ -53,10 +53,10 @@ describe("numbers.js", () => {
       chai.assert.isTrue(Number.isInteger(numberGenerator(0, 10)), "Be sure to return a whole number")
     })
     it("Return number is within the provided range", () => {
-      chai.assert.isTrue((numberGenerator(10, 100) >= 10 && numberGenerator(10, 100) <= 100), "Be sure to include the provided numbers in your range")
+      chai.assert.isTrue((numberGenerator(50, 60) >= 50 && numberGenerator(50, 60) <= 60), "Be sure to include the provided numbers in your range")
     })
     it("Function still works given that num1 isn't necessarily the smallest number", () => {
-      chai.assert.isTrue((numberGenerator(100, 10) >= 10 && numberGenerator(100, 10) <= 100), "Be sure to include the provided numbers in your range")
+      chai.assert.isTrue((numberGenerator(90, 85) >= 85 && numberGenerator(90, 85) <= 90), "Be sure to include the provided numbers in your range")
     })
   })
 })
