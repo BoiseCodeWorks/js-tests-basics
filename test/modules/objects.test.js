@@ -24,6 +24,7 @@ describe("objects.js", () => {
       chai.assert.isTrue(dog.likes.length >= 3, "I am Dog, I need more likes.")
     })
     describe("howManyLegs Function", () => {
+      let howManyLegs = window["howManyLegs"]
       it("Function uses dot notation to return the number of legs on goodDoggo object", () => {
         chai.assert.isTrue(dog.legs && howManyLegs() == dog.legs, "Be sure to use dot notation")
       })
