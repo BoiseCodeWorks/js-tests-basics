@@ -32,6 +32,7 @@ describe("objects.js", () => {
 
   describe("The Cat Challenges", () => {
     describe("renameCat Function", () => {
+      let renameCat = window["renameCat"]
       it("Function should return the cat's new name", () => {
         chai.assert.strictEqual(renameCat(), "Kevin", "Be sure to name the cat Kevin")
       })
@@ -40,6 +41,7 @@ describe("objects.js", () => {
       })
     })
     describe("colorTheCat Function", () => {
+      let colorTheCat = window["colorTheCat"]
       it("The function should return a string", () => {
         chai.assert.isString(colorTheCat(),
           "Be sure to return a string value")
@@ -57,6 +59,7 @@ describe("objects.js", () => {
       })
     })
     describe("returnIndex Function", () => {
+      let returnIndex = window["returnIndex"]
       let testArray = {
         likes: ['a', 'b', 'c', 'd', 'e', 'f']
       }
