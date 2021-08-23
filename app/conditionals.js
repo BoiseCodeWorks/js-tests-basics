@@ -1,8 +1,11 @@
 //1. Given two numbers, write a function that will return  the larger number
 
 function largerNum(num1, num2) {
-    // you code here
-
+    if(num1 > num2){
+        return num1
+    } else {
+        return num2
+    }
 }
 
 // 2. Given two numbers, amount correct and amount possible of a test, return the corresponding letter grade.
@@ -14,7 +17,12 @@ function largerNum(num1, num2) {
 // output: "F"
 
 function testGrader(score, possible) {
-
+    let grade = Math.floor(score/possible)
+    if(grade >= 90 ){
+        return "A"
+    } else if(grade >= 80 && grade < 90) {
+        return "B"
+    }
 }
 
 
