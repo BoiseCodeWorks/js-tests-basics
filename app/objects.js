@@ -29,7 +29,6 @@ let cat = {
 // "Pickles" to "Kevin".Then use either dot or bracket notation to return 
 // the value of the name property.
 function renameCat() {
-  return cat['name'] = 'Kevin'
 }
 
 // Create a function that uses dot or bracket notation to create a property 
